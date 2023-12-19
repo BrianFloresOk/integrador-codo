@@ -1,0 +1,109 @@
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: inherit;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: inherit;
+    height: 480px;
+    position: relative;
+}
+
+/* Cars del menu */
+
+.menu-card {
+    border: thin solid rgba(0, 0, 0, 0.18);
+    border-radius: 25px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+    height: 198px;
+}
+
+.card-image {
+    position: relative;
+    width: 150px;
+    padding: 3px;
+    height: 100%;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--negro)
+}
+
+.description {
+    padding: 1rem;
+    font-size: 14px;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.swiper-navBtn {
+    color: var(--marron-rojizo);
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--rojo-claro);
+    }
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--rojo-claro);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--marron-rojizo);
+}
+
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}

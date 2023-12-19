@@ -1,0 +1,25 @@
+/* Importación de CDN de fontawesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=The+Nautigal&display=swap');
+
+:root {
+    /* COLORES */
+    --blanco: #FFFFFF;
+    --blanco2: #FCFDEE;
+    --color1: #FCFDEE;
+    --color2: #EFC65D;
+    --bg-gradiente: linear-gradient(to bottom, #EFC65D, #FCFDEE);
+    --bg-gradiente-reverse: linear-gradient(to top, #EFC65D, #FCFDEE);
+    --marron-rojizo: #290A0A;
+    --rojo-claro: #984141;
+    --gris: #937272;
+    --gris-claro: #d3d3d3;
+    --negro: #1F1F1E;
+    
+    /* Fuentes */
+    --font-play: 'Playfair Display', serif;
+    --font-nautigal: 'The Nautigal', cursive;
+}

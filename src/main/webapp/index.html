@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/logos/logo.png"
+	type="image/x-icon">
+
+<meta name="author" content="Brian Flores">
+<meta name="description" content="Proyecto La luna y la miel">
+
+<title>La Luna y la Miel</title>
+<!-- Bootstrap -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+
+<!-- Swipper -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Css -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script src="js/form.js"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+		<header id="inicio">
+			<!-- Navegacion -->
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<div class="col-md-4 logo_container">
+						<a class="navbar-brand" href="#"> <img loading="lazy"
+							src="images/logos/logo-sin-fondo.png" alt="Bootstrap">
+						</a>
+					</div>
+					<button class="navbar-toggler border-0" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" aria-current="page"
+								href="#inicio">Inicio</a></li>
+							<li class="nav-item"><a class="nav-link" href="#menu">Menu</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="#nosotros">Sobre
+									nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="#reserva">Reservá</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="/final/login"
+								id="login">Iniciar sesión</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- FIN Navegacion -->
+		</header>
+
+		<section id="presentation">
+			<div id="speach">
+				<p>Disfrutá de la mejor comida en un solo lugar</p>
+				<p>Nos dedicamos a brindar el mejor servicio para que
+					experimentes lo mejor de nuestros platos. Sabor y excelencia te
+					están esperando.</p>
+			</div>
+			<div id="fondo_lateral_container">
+				<img loading="lazy" src="images/fondos/fondo_2.png"
+					alt="plato_fondo">
+			</div>
+		</section>
+		<!-- Seccion de mejores platos -->
+		<div class="title">
+			<h2>Nuestros mejores platos</h2>
+		</div>
+		<!-- Carrusel de los platos -->
+		<section id="best_foods">
+			<!-- Swipper -->
+			<div class="slide-container swiper">
+				<div class="slide-content">
+					<div class="card-wrapper swiper-wrapper">
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy" src="images/carnes/bistec.png"
+										alt="bistec" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Ojo de bife con vegetales</h2>
+								<p class="description">Exquisito bistec a la plancha, jugoso
+									y lleno de sabor, se combina perfectamente con los vegetales
+									asados, creando un plato irresistible que deleita el paladar
+									con cada bocado</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy"
+										src="images/ensaladas/ensalada_mariscos.png"
+										alt="ensalada_mariscos" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Ensalada con mariscos</h2>
+								<p class="description">La frescura de los mariscos se
+									combina con la variedad de vegetales en esta ensalada, creando
+									un plato delicioso y saludable que te transporta al mar en cada
+									bocado.</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy"
+										src="images/carnes/salmon_verduras.png"
+										alt="salmon_verduras" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Salmón rosado con ensalada fresca</h2>
+								<p class="description">Nuestro salmón rosado, delicadamente
+									cocido, se une a una ensalada fresca y colorida. La
+									combinaciÃ³n de sabores frescos y texturas crujientes hace de
+									este plato una experiencia culinaria excepcional.</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy" src="images/pastas/lasaña.png"
+										alt="lasaña" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Lasaña</h2>
+								<p class="description">Nuestra lasaña, un clásico italiano,
+									es un festín de capas de pasta al dente, ricotta cremosa, salsa
+									de tomate casera y queso fundido. Una indulgencia reconfortante
+									que deleitará tu paladar.</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy" src="images/carnes/paella.png"
+										alt="paella" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Paella</h2>
+								<p class="description">Nuestra Paella, un auténtico deleite
+									español, fusiona el arroz con mariscos frescos, tiernos trozos
+									de pollo y una mezcla de especias que transportan tus sentidos
+									a la costa mediterránea. Una deliciosa experiencia culinaria.</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<div class="card-image">
+									<img loading="lazy" src="images/pastas/estofado.png"
+										alt="estofado" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h2 class="name">Estofado de cordero</h2>
+								<p class="description">Nuestro estofado de cordero es una
+									explosión de sabor y ternura. La carne se deshace en una mezcla
+									de especias y vegetales, un verdadero deleite reconfortante.</p>
+								<div class="position">
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="swiper-button-next swiper-navBtn"></div>
+				<div class="swiper-button-prev swiper-navBtn"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<!-- FIN seccion de mejores platos -->
+	</div>
+	<main>
+
+		<!-- Seccion sobre nosotros -->
+		<section class="section">
+			<div>
+				<article class="section_nosotros">
+					<h2 id="nosotros">Sobre nosotros</h2>
+					<div>
+						<p>En La Luna y La Miel, la pasión por la comida y la
+							hospitalidad se fusionan para brindarte una experiencia culinaria
+							única bajo el resplandor de la luna y la dulzura de la miel.
+							Nuestro restaurante es más que un lugar para comer; es un rincón
+							de encanto y sabor donde cada detalle está cuidadosamente
+							diseñado para sorprenderte.</p>
+						<p>Nos enorgullece ser parte de tu historia y esperamos seguir
+							siéndolo en cada celebración, cada cena romántica y cada reunión
+							especial. En La Luna y La Miel, la magia de la comida se mezcla
+							con la calidez de nuestro equipo para ofrecerte una experiencia
+							que brilla como la luna y es tan dulce como la miel. ¡Te damos la
+							bienvenida a nuestro rincón gastronómico!</p>
+
+					</div>
+				</article>
+			</div>
+			<div id="banner_container">
+				<article class="banner">
+					<img loading="lazy" src="images/fondos/barista.jpg"
+						alt="barista">
+				</article>
+				<article class="banner">
+					<img loading="lazy" src="images/fondos/mesa-1.jpg"
+						alt="mesa-1">
+				</article>
+				<article class="banner">
+					<img loading="lazy" src="images/fondos/brindis.jpg"
+						alt="brindis">
+				</article>
+			</div>
+		</section>
+		<!-- FIN seccion sobre nosotros -->
+
+
+		<div id="menu">
+			<div class="menu_title_container">
+				<h2 class="menu_title">Menú</h2>
+			</div>
+			<section class="section_menu">
+				<div class="subTitle_menu">
+					<h4>Ensaladas</h4>
+				</div>
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/ensalada.png" alt="ensalda"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Ensalada con burrata</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/ensalada-cesar.png"
+											alt="ensalada-cesar" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Ensalada César</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/pollo_ensalada.png"
+											alt="arroz-vegetales" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Pollo picante con hojas verdes</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/ensalada_mariscos.png"
+											alt="ensalda" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Ensalada del mar</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/ensalada_pollo.png"
+											alt="ensalda" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Ensalada con pollo agridulce</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/ensaladas/arroz_vegetales.png"
+											alt="ensalda" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Arroz japones con vegetales</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+				</div>
+
+			</section>
+			<section class="section_menu">
+				<div class="subTitle_menu">
+					<h4>Principales</h4>
+				</div>
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/carnes/bistec.png"
+											alt="bistec" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Ojo de bife con vegetales</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/carnes/brochetas.png"
+											alt="brochetas" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Brochetas de cordero</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/carnes/milanesa-papas.png"
+											alt="milanesa-papas.png" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Milanesa de ternera con guarnición</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/carnes/churrasco-cordero-papas.png"
+											alt="cordero" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Cordero a la hierbas</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/carnes/paella.png"
+											alt="paella" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Paella clásica</h2>
+									<p class="price">$3200</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/carnes/pollo_plancha.png" alt="pollo"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Pechuga rellena</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="./public/images/carnes/risotto.png"
+											alt="risotto" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Risoto con hongos</h2>
+									<p class="price">$2300</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/carnes/salmon_verduras.png" alt="salmon"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Salmon rosado con ensalada fresca</h2>
+									<p class="price">$3200</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/carnes/tallarines_salteados.png"
+											alt="tallarines" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Tallarines salteados</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+				</div>
+			</section>
+			<section class="section_menu">
+				<div class="subTitle_menu">
+					<h4>Pastas</h4>
+				</div>
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/pastas/albondigas.png" alt="albondigas"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Albondigas de cordero y novillo</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/pastas/estofado.png"
+											alt="estofado" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Estofado de carne</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/pastas/fideos-crema.png"
+											alt="fideos-crema" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Fideos a la crema</h2>
+									<p class="price">$2500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/pastas/lasaña.png"
+											alt="lasaña" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Lasaña</h2>
+									<p class="price">$3000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy" src="images/pastas/mostachol.png"
+											alt="mostacholes" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Mostacholes a la veneciana</h2>
+									<p class="price">$2000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/pastas/tallarin-con-bolognesa.png"
+											alt="bolognesa" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Tallarines con ragú de cordero</h2>
+									<p class="price">$2800</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+				</div>
+
+			</section>
+			<section class="section_menu">
+				<div class="subTitle_menu">
+					<h4>Postres</h4>
+				</div>
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/mouse-chocolate-crema.png"
+											alt="mouse-crema" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Mouse de chocolate con crema</h2>
+									<p class="price">$1200</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/copa-helado.png"
+											alt="copa-helado.png" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Copa de helado artesanal</h2>
+									<p class="price">$1000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/panqueque.png"
+											alt="panqueque.png" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Panqueques con miel</h2>
+									<p class="price">$1000</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/rollo-suizo.png"
+											alt="postre-suizo" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Postre suizo</h2>
+									<p class="price">$1300</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/torta-oreo.png" alt="torta-oreo"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Torta de oreo</h2>
+									<p class="price">$1200</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/torta-frutos-secos.png"
+											alt="torta-frutos-secos" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Torta con frutos secos</h2>
+									<p class="price">$1500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/torta-frutos-del-bosque.png"
+											alt="torta-frutos-del-bosque" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Torta con frutos silvestres</h2>
+									<p class="price">$1500</p>
+								</div>
+							</div>
+							<div class="menu-card swiper-slide">
+								<div class="image-content">
+									<div class="card-image">
+										<img loading="lazy"
+											src="images/postres/torta-de-cafe.png" alt="cafe"
+											class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name">Torta dulce de cafe</h2>
+									<p class="price">$1200</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+				</div>
+
+			</section>
+		</div>
+
+		<!-- Seccion de contacto -->
+		<section>
+			<div class="subTitle_menu">
+				<h4>Contactanos</h4>
+			</div>
+			<div class="contact_section" id="reserva">
+				<div class="form_container">
+					<div class="title_reserva">
+						<h4>Reservá</h4>
+					</div>
+					<form>
+						<div>
+							<div class="campo_container">
+								<label for="fecha">Escoge la fecha</label> <input class="campo"
+									type="date" name="fecha" id="fecha">
+							</div>
+							<div class="campo_container">
+								<label for="nombre">Nombre</label> <input class="campo"
+									type="text" name="nombre" id="nombre">
+							</div>
+							<div class="campo_container">
+								<label for="email">Email</label> <input class="campo"
+									type="text" name="email" id="email">
+							</div>
+							<div class="campo_container">
+								<label for="comentario">Comentario <span>(opcional)</span></label>
+								<textarea class="campo" name="comentario" id="comentario"
+									cols="10" rows="5"></textarea>
+							</div>
+						</div>
+						<div class="button_container">
+							<button>Enviar</button>
+						</div>
+					</form>
+				</div>
+				<div class="map_container">
+					<div class="directions">
+						<h4 id="visitanos">Visitanos</h4>
+						<div>
+							<p>Calle falsa 123</p>
+							<p>Tel: +54-40324032</p>
+						</div>
+					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26276.41805764633!2d-58.41941049174524!3d-34.59019418951782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82d892d10f%3A0xd5ed409d6ee386cf!2sBarrio%20Norte%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1695692043472!5m2!1ses-419!2sar"
+						allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- Fin seccion de contacto -->
+
+	</main>
+	<footer>
+		<div class="footer_container">
+			<article class="footer_logo">
+				<div>
+					<h2>La luna y la miel</h2>
+				</div>
+				<div>
+					<p>Inigualable experiencia de sabor y placer acompaÃ±an tu
+						velada. Â¡Te esperamos!</p>
+				</div>
+			</article>
+			<div class="footer_contains">
+				<article>
+					<div class="footer_subtitle_container">
+						<h4>Acceso rapido</h4>
+					</div>
+					<ul>
+						<li><a class="links" href="#inicio">Inicio</a></li>
+						<li><a class="links" href="#nosotros">Sobre nosotros</a></li>
+						<li><a class="links" href="#menu">Menú</a></li>
+						<li><a class="links" href="#reserva">Reservá¡</a></li>
+					</ul>
+				</article>
+				<article>
+					<div class="footer_subtitle_container">
+						<h4>Ayuda</h4>
+					</div>
+					<ul>
+						<li><a class="links" href="#visitanos">Visitanos</a></li>
+						<li><a class="links" href="#">Medios de pago</a></li>
+						<li><a class="links" href="#">Delivery</a></li>
+					</ul>
+				</article>
+				<article>
+					<div class="footer_subtitle_container">
+						<h4>Redes</h4>
+					</div>
+					<ul id="footer_social">
+						<li><a href="http://www.facebook.com" target="_blank"
+							rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href="http://www.instagram.com" target="_blank"
+							rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="http://www.twitter.com" target="_blank"
+							rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
+						<li><a href="https://github.com/BrianFloresOk"
+							target="_blank" rel="noopener noreferrer"><i
+								class="fa-brands fa-github"></i></a></li>
+					</ul>
+				</article>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&COPY; Copyright 2023 - La luna y la miel</p>
+		</div>
+	</footer>
+	<!-- Swipper JS -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+</body>
+
+</html>
