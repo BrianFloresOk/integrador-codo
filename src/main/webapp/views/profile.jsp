@@ -37,7 +37,7 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<div class="col-md-4 logo_container">
-						<a class="navbar-brand" href="#"> <img loading="lazy"
+						<a class="navbar-brand" href="/final"> <img loading="lazy"
 							src="images/logos/logo-sin-fondo.png" alt="Bootstrap">
 						</a>
 					</div>
@@ -49,15 +49,16 @@
 					</button>
 					<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 						<ul class="navbar-nav">
-							<li class="nav-item"><a class="nav-link" aria-current="page"
-								href="#inicio">Inicio</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/final">Inicio</a>
+                            </li>
 							<li class="nav-item"><a class="nav-link" href="#menu">Menu</a>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="#nosotros">Sobre
 									nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="#reserva">Reservá</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="#login"
+							<li class="nav-item"><a class="nav-link" href="/final"
 								id="login">Cerrar sesión</a></li>
 						</ul>
 					</div>
@@ -69,7 +70,7 @@
 
 	<main>
 		<div>
-			<h2 class="p-2">Bienvenido Brian</h2>
+			<h2 class="p-2">Bienvenido Administrador</h2>
 		</div>
 
 		<section class="my-3">
@@ -91,9 +92,9 @@
 								<td>${plato.nombre}</td>
 								<td>${plato.descripcion}</td>
 								<td>${plato.precio}</td>
-								<td>
-									<a href="/plato/editar?id=${plato.id}"><button type="button" class="btn btn-success">Editar</button></a>
-									<a href="/plato/eliminar?id=${plato.id}"><button type="button" class="btn btn-danger">Eliminar</button></a>
+								<td class="d-flex">
+									<a href="/final/plato/editar?id=${plato.id}"><button type="button" class="btn btn-success">Editar</button></a>
+									<form class="ms-1" method="POST" action="/final/plato/eliminar/${plato.id}?_method=DELETE"><button type="submit" class="btn btn-danger">Eliminar</button></form>
 								</td>
 							</tr>
 						</c:forEach>

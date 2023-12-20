@@ -125,13 +125,12 @@ public class UsuarioDAO {
                 statement.setString(2, contrasena);
 
                 try (ResultSet resultSet = statement.executeQuery()) {
-                    // Si hay un resultado, las credenciales son válidas
                     return resultSet.next();
                 }
             }
 
         } catch (SQLException e) {
-            e.printStackTrace(); // Manejo básico de errores, puedes mejorarlo según tus necesidades
+            e.printStackTrace();
             return false;
         }
     }

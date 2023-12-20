@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.restaurant.DAO.PlatoDAO;
+import com.restaurant.DAO.UsuarioDAO;
 import com.restaurant.modelo.Plato;
 
 @WebServlet("/mi-perfil")
@@ -25,6 +26,7 @@ public class PerfilUsuario extends HttpServlet{
 
         	PlatoDAO platoDAO = new PlatoDAO();
         	List<Plato> listaPlatos = platoDAO.obtenerTodos();
+        	
 
         	req.setAttribute("menu", listaPlatos);
 

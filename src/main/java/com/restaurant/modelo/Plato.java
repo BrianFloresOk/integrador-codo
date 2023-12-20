@@ -8,6 +8,12 @@ public class Plato {
 	private int precio;
 
 
+	public Plato(String nombre, String descripcion, int precio) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.precio = precio;
+	}
+	
 	public Plato(int id, String nombre, String descripcion, int precio) {
 		this.id = id;
 		this.nombre = nombre;

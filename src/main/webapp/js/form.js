@@ -1,22 +1,28 @@
 window.addEventListener('load', () => {
-    let form = document.querySelector("form")
-    let email = document.querySelector("#email")
-    let name = document.querySelector("#nombre")
-    let fecha = document.querySelector("#fecha")
-    let comentario = document.querySelector("#comentario")
+    // Captura todos los formularios en la página
+    let forms = document.querySelectorAll("form");
 
-    form.addEventListener("submit", (event) => {
-        event.preventDefault()
+    forms.forEach((form) => {
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
 
-        if(email.value === "" && fecha.value === "" && name.value === "") {
-            alert("Hay campos vacíos, complete para reservar")
-        } else {
-            alert("Reserva realizada. ¡Te esperamos!")
-            email.value = ""
-            fecha.value = ""
-            name.value = ""
-            comentario.value = ""
-        }
-    })
+            // Obtiene los campos dentro del formulario actual
+            let inputs = form.querySelectorAll("input, textarea, select");
 
-})
+            // Verifica si alguno de los campos está vacío
+            let isEmpty = Array.from(inputs).some((input) => {
+                return input.value.trim() === "";
+            });
+
+            if (isEmpty) {
+                alert("Hay campos vacíos, complete para continuar.");
+            } else {
+				form.submit()                
+                // Opcional: Restablece los valores de los campos del formulario
+                inputs.forEach((input) => {
+                    input.value = "";
+                });
+            }
+        });
+    });
+});

@@ -1,4 +1,4 @@
-<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +23,7 @@
 <!-- Css -->
 <link rel="stylesheet" href="../css/styles.css">
 <link rel="stylesheet" href="../css/form_user.css">
+<script src="js/form.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<div class="col-md-4 logo_container">
-						<a class="navbar-brand" href="#"> <img loading="lazy"
+						<a class="navbar-brand" href="/final"> <img loading="lazy"
 							src="../images/logos/logo-sin-fondo.png" alt="Bootstrap">
 						</a>
 					</div>
@@ -44,8 +45,9 @@
 					</button>
 					<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 						<ul class="navbar-nav">
-							<li class="nav-item"><a class="nav-link" aria-current="page"
-								href="#inicio">Inicio</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/final">Inicio</a>
+                            </li>
 							<li class="nav-item"><a class="nav-link" href="#menu">Menu</a>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="#nosotros">Sobre
@@ -69,7 +71,7 @@
 					<div class="title_reserva">
 						<h4>Crear plato</h4>
 					</div>
-					<form method="post" action="/final/plato/agregar">
+					<form method="post" action="/final/plato/agregar" accept-charset="UTF-8">
 						<div>
 							<div class="campo_container" style="display: block; width: 100%;">
 								<label for="nombre">Nombre</label> <input class="campo"
@@ -87,9 +89,6 @@
 									type="text" name="precio" id="precio"
 									placeholder="Ingresá el precio">
 							</div>
-						</div>
-						<div id="message_alert">
-							<p class="alerta">¡Hay campos vacíos!</p>
 						</div>
 						<div class="button_container">
 							<button type="submit">Crear plato</button>

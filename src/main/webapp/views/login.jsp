@@ -1,5 +1,4 @@
-<%@ page contentType="text/html"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,6 +18,8 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/form_user.css">
+    
+    <script src="js/form.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="col-md-4 logo_container">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="/final">
                             <img loading="lazy" src="images/logos/logo-sin-fondo.png" alt="Bootstrap">
                         </a>
                     </div>
@@ -40,7 +41,7 @@
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="/final">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#menu">Menu</a>
@@ -69,7 +70,7 @@
                     <div class="title_reserva">
                         <h4>Iniciá sesión</h4>
                     </div>
-                    <form method="post" action="">
+                    <form method="post" action="/final/login">
                         <div>
                             <div class="campo_container" style="display: block; width: 100%;">
                                 <label for="email">Email</label>
@@ -80,9 +81,11 @@
                                 <input class="campo" type="password" name="password" id="password" placeholder="Ingresá tu contraseña">
                             </div>
                         </div>
+                        <% if(request.getAttribute("msg") != null) { %>
                         <div id="message_alert">
-                            <p class="alerta">¡Usuario o contraseña inválidas!</p>
+                            <p class="alerta">¡Credenciales inválidas!</p>
                         </div>
+                        <% } %>
                         <div class="button_container">
                             <button type="submit">Ingresar</button>
                         </div>

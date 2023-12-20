@@ -15,7 +15,7 @@ public class PlatoDAO {
     // Método para obtener todos los platos
     public List<Plato> obtenerTodos() {
         List<Plato> platos = new ArrayList<>();
-        String query = "SELECT * FROM plato ORDER BY nombre";
+        String query = "SELECT * FROM plato ORDER BY id desc";
 
         try (Connection connection = ConexionDB.conectar();
              PreparedStatement preparedStatement = connection.prepareStatement(query);

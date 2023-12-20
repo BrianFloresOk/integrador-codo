@@ -37,15 +37,16 @@ public class LoginUsuario extends HttpServlet{
 
 		UsuarioDAO user = new UsuarioDAO();
 		Boolean credenciales = user.validarCredenciales(email, password);
-
+		
 		if(!credenciales) {
 			String msgError = "¡Credenciales inválidas!";
 			req.setAttribute("msg", msgError);
-	        RequestDispatcher dispatcher = req.getRequestDispatcher("/vews/login.jsp");
+	        RequestDispatcher dispatcher = req.getRequestDispatcher("/views/login.jsp");
 	        dispatcher.forward(req, res);
+		} else {
+			res.sendRedirect(req.getContextPath() + "/mi-perfil");			
 		}
 
-		res.sendRedirect(req.getContextPath() + "/mi-perfil");
 	}
 
 }

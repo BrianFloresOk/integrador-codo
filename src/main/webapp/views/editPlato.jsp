@@ -1,8 +1,5 @@
-<%@ page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.List"%>
 <%@ page import="com.restaurant.modelo.Plato"%>
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html>
@@ -37,7 +34,7 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<div class="col-md-4 logo_container">
-						<a class="navbar-brand" href="#"> <img loading="lazy"
+						<a class="navbar-brand" href="/final"> <img loading="lazy"
 							src="../images/logos/logo-sin-fondo.png" alt="Bootstrap">
 						</a>
 					</div>
@@ -49,8 +46,9 @@
 					</button>
 					<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 						<ul class="navbar-nav">
-							<li class="nav-item"><a class="nav-link" aria-current="page"
-								href="#inicio">Inicio</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/final">Inicio</a>
+                            </li>
 							<li class="nav-item"><a class="nav-link" href="#menu">Menu</a>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="#nosotros">Sobre
@@ -72,32 +70,31 @@
 			<div class="contact_section" id="form_user">
 				<div class="form_container">
 					<div class="title_reserva">
-						<h4>Crear plato</h4>
+						<h4>Editar plato</h4>
 					</div>
-					<form method="post" action="/final/plato/agregar">
+					<form method="post" action="/final/plato/editar/${plato.id}?_method=PUT">
 						<div>
 							<div class="campo_container" style="display: block; width: 100%;">
-								<label for="nombre">Nombre</label> <input class="campo"
+								<label for="nombre">Nombre</label>
+								<input class="campo"
 									type="text" name="nombre" id="nombre"
-									placeholder="Ingresá el nombre">
+									placeholder="Ingresá el nombre" value="${plato.nombre}">
 							</div>
 							<div class="campo_container" style="display: block; width: 100%;">
-								<label for="descripcion">Descripcion</label> <input
+								<label for="descripcion">Descripcion</label>
+								<input
 									class="campo" type="text" name="descripcion" id="descripcion"
-									placeholder="Añadí una descripción">
+									placeholder="Añadí una descripción" value="${plato.descripcion}">
 							</div>
 							<div class="campo_container" style="display: block; width: 100%;">
 								<label for="precio">Precio</label>
 								<input class="campo"
 									type="text" name="precio" id="precio"
-									placeholder="Ingresá el precio">
+									placeholder="Ingresá el precio" value="${plato.precio}">
 							</div>
 						</div>
-						<div id="message_alert">
-							<p class="alerta">¡Hay campos vacíos!</p>
-						</div>
 						<div class="button_container">
-							<button type="submit">Crear plato</button>
+							<button type="submit">Guardar cambios</button>
 						</div>
 						<div class="button_container mt-3">
 							<a href="/final/mi-perfil"><input type="button" class="campo fw-bold" value="Volver"></a>
